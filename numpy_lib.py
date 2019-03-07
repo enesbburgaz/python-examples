@@ -1,9 +1,9 @@
-import numpy as np #numpy kütüphanesini dahil ettik
+﻿import numpy as np 
 
-dizi = np.array([1,2,3,4,5,6,7,8]) #numpy dizisi oluşturduk. 1*8 yani bir boyutlu sekiz elemanlı matris aslında
-print("Dizi elemanları: ",dizi)     #elemanları ekrana basar
-print("Dizi tipi: ",type(dizi))     #dizi tipini gösterir.
-print("kaça kaç matris: ",dizi.shape)  #kaça kaç bir matris olduğunu gösterir.şekil,biçim,form
+dizi = np.array([1,2,3,4,5,6,7,8]) 
+print("Dizi elemanları: ",dizi)    
+print("Dizi tipi: ",type(dizi))    
+print("kaça kaç matris: ",dizi.shape)
 
 print("-------------------------------------------------------------------")
 
@@ -42,16 +42,16 @@ print("-------------------------------------------------------------------")
 d4 = np.array([11,12,13])
 d5 = np.array([7,8,9])
 
-print("toplama: ",d4+d5) #toplama
-print("çıkartma:",d4-d5)    #çıkartma
-print("çarpma: ",d4*d5)    #çarpma
-print("bölme: ",d4/d5)    #bölme
-print("karesi: ",d4**2)    #karesini alma
-print(np.sin(d4),np.sin(d5))    #sin değerleri
-print(d4 < 5)   #elemanları 5ten küçük mü ? true veya false değer döndürür.
-print("sqrt",np.sqrt(d4))       #karekökü alınır
-print("square",np.square(d5))      #karesi alınır.
-print(":",np.add(d4,d4))    #2 katını almayla aynı şey. iki matrisn toplamı
+print("toplama: ",d4+d5)
+print("çıkartma:",d4-d5)   
+print("çarpma: ",d4*d5)    
+print("bölme: ",d4/d5)    
+print("karesi: ",d4**2)    
+print(np.sin(d4),np.sin(d5))   
+print(d4 < 5)  
+print("sqrt",np.sqrt(d4))      
+print("square",np.square(d5))     
+print(":",np.add(d4,d4))   
 
 print("-------------------------------------------------------------------")
 
@@ -93,10 +93,10 @@ print("-------------------------------------------------------------------")
 array1 = np.array([[1,2],[3,4]])
 array2 = np.array([[-1,-2],[-3,-4]])
 
-array3 = np.column_stack((array1,array2)) #iki matrisi kolon olarak birleştirir.
-array4 = np.row_stack((array1,array2))      #satır olarak yazar
-array5 = np.vstack((array1,array2))     #veritical yukardakiyle aynı işlemi yapar sütun olarak birleştirir.
-array6 = np.hstack((array1,array2))     #horizontal yatay
+array3 = np.column_stack((array1,array2)) 
+array4 = np.row_stack((array1,array2))    
+array5 = np.vstack((array1,array2))    
+array6 = np.hstack((array1,array2))     
 print(array3)
 print(array4)
 print(array5)
@@ -108,11 +108,11 @@ y = np.array([1,2,3,4,5])
 o = y
 l = y
 print(y,o,l)
-o[2] = 9        #burada y tek tanımlı obje olduğu için diğerleride y ye baglı oldugu için hepsi değişir.
+o[2] = 9        
 print(y,o,l)
 
 o = y.copy()
-l = y.copy()        #kopyaladık ve hepsi birbirinden bağmsız oldu.
+l = y.copy()       
 print(y,o,l)
 o[2] = 15
 print(y,o,l)

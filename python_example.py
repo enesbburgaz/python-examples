@@ -1,22 +1,16 @@
-#Python başlangıç = help(int,str,list..) şeklinde veya print(dir(..)) şeklinde bulamadığınız şeylere detaylı bakabilirsiniz.
-#değisken tanımlama
-#degiskenlerin  buyuk harfle baslamasi uygun degil ama yazılabilir tabiki
-#5sayi şeklinde sayı başta tanımlanamaz.
-sayi = 10  #int = integer
+﻿sayi = 10  #int = integer
 isim = "string" #str = string
 flt = 10.1 #float
 liste = [1,2,3,4,5,6,7,8,9] #list
 dic = {"marka":"ford","model":"mustang","yıl":"1964"} #dictionary
 tpl = ("elma","muz","kiraz") #tuple
 
-# %% - %% şeklinde bölümleri ayırabiliriz.
 #--------------------------------------------------------------------------------------
 #kullanıcıdan veri alma
 veri = input("Bir sayi giriniz: ")
 print(veri)
 #int(input(...)), str(input(...)), float(input(...)) şeklinde tip dönüşümleri yapabiliriz.
 
-#verileri ekrana bastırma
 print("#verileri ekrana bastırma")
 print(sayi, isim, flt, liste, dic, tpl)
 #değişenin tipi
@@ -83,7 +77,7 @@ else:
 #örnek 2
 ara = 5
 if ara in liste:
-    print("{} sayisi listede var".format(ara)) #yazdırmak istediğimiz değeri dışardan .format(deger) şeklinde girebiliriz.
+    print("{} sayisi listede var".format(ara))
 else:
     print("{} sayisi listede yok".format(ara))
 
